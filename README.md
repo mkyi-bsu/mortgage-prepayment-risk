@@ -69,7 +69,16 @@ https://capitalmarkets.fanniemae.com/tools-applications/data-dynamics
 
 ##  Requirements
 
-Install all required packages listed in requirements.txt:
+Key libraries used:
+
+- pandas
+- numpy
+- scikit-learn
+- matplotlib
+- pandas_datareader
+- pickle
+
+Install all required packages listed in the requirements.txt:
 
 pip install -r requirements.txt
 
