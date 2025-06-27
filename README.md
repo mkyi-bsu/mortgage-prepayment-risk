@@ -1,16 +1,16 @@
-# Mortgage Prepayment Risk Prediction Using Scikit-learn Decision Tree 
+#  Mortgage Prepayment Risk Prediction Using Scikit-learn Decision Tree 
 
 This project predicts whether a mortgage will be prepaid using historical Fannie Mae loan data enriched with macroeconomic indicators. It was developed during the MIT x Break Through Tech AI Studio Challenge, under the guidance of Jonathan Zuo, AI Challenge Advisor at maka.AI. The project demonstrates an end-to-end machine learning pipeline using real-world data.
 
 ---
 
-## 📌 Problem Statement
+##  Problem Statement
 
 Mortgage prepayments can significantly impact investor returns and risk assessments. By predicting which loans are likely to be prepaid, financial institutions can make more informed decisions around asset management, refinancing, and risk modeling.
 
 ---
 
-## 📊 Data Snapshot
+##  Data Snapshot
 
 **Source**: Extracted open-sourced dataset from Fannie Mae's Data Dynamics  
 **File Size**: Approximately 30MB  
@@ -21,12 +21,11 @@ Mortgage prepayments can significantly impact investor returns and risk assessme
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 mortgage-prepayment-risk/  
 ├── data/  # Raw and processed loan data (ignored from Git)  
 ├── notebooks/  # Jupyter notebooks for each pipeline stage  
-├── outputs/  # Model outputs, charts, and metrics  
 ├── src/  # Python scripts for modular components  
 ├── requirements.txt  # Python dependencies  
 ├── .gitignore  # Files/folders to exclude from version control  
@@ -60,17 +59,37 @@ mortgage-prepayment-risk/
 1. Clone the repository
 2. Place raw CRT data and macro data into `data/raw/`
 3. Open notebooks in order and run step-by-step
-4. (Optional) Convert notebooks to scripts for production pipeline
+4. (Optional) Convert notebooks to scripts for the production pipeline
+
+Note: Raw data is not included in this repository due to size and licensing restrictions.
+To run this project, please download historical loan data from Fannie Mae:
+https://capitalmarkets.fanniemae.com/tools-applications/data-dynamics
 
 ---
 
 ##  Requirements
 
-Install required packages with: see details packages needed in requirements.txt
+Install all required packages listed in requirements.txt:
 
-```bash
 pip install -r requirements.txt
-Raw data not included due to size and licensing. 
-To run this project, please download historical loan data from Fannie Mae:
-https://creditrisktransfer.fanniemae.com/credit-risk-transfer/cas/historical-loan-performance
+
+---
+
+##  Data Access
+This project requires raw loan-level data from Fannie Mae’s Data Dynamics portal. Due to licensing and size restrictions, this data is not included in the repository.
+You can download the data by following these steps:
+Visit Fannie Mae Data Dynamics: 
+- Register for a free account or log in
+- In the left sidebar, select CAS (Credit Risk Transfer)
+- Click on Deal Performance Data under REPORTS
+- Choose the Deal Performance Summary tab at the top
+- Set your filters as needed (for example, Remit Period: Nov 2023)
+- Use the Download button to export the data
+
+---
+
+##  License
+MIT License
+
+
 
